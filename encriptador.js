@@ -17,5 +17,19 @@ function encriptarTexto(){
 	document.querySelector("#txtDescencriptado").innerHTML= textoEncriptado;
 }
 
+function desencriptarTexto(){
+	//obtener el texto
+	texto = document.querySelector("#textarea").value;
+	//desencriptar el texto
+	textoDesencriptado =texto.replace(/enter/g,"e").replace(/imes/g,"i").replace(/ai/g,"a").replace(/ober/g,"o").replace(/ufat/g,"u");
+	//ocultar la imagen y los mensajes
+	document.querySelector(".sin-respuesta").style.display = "none";
+	//mostrar el textarea resultado y el boton copiar
+	document.querySelector("#txtDescencriptado").style.display = "block";
+	document.querySelector("#txtDescencriptado").innerHTML= textoDesencriptado;
+	document.querySelector(".btnCopiar").style.display = "block";	 
+}
+
 btnEncriptar.onclick = encriptarTexto;
+btnDescencriptar.onclick = desencriptarTexto;
 
