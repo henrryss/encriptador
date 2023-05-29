@@ -178,6 +178,7 @@ span label{
 	border: 0;
 	background: none;
 	resize: none;
+	pointer-events: none; /* Deshabilitamos los eventos de mouse y teclado sobre el textarea */
 }
 
 .sin-respuesta{
@@ -187,7 +188,6 @@ span label{
 	top: 272px;
 	left: 30px;
 	margin: -20px 0 -20px 0;
-	
 }
 
 .sin-respuesta img{
