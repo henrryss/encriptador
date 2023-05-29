@@ -174,10 +174,10 @@ span label{
 	font-size: 32px;
 	line-height: 150%;
 	color: #0A3871;
-	padding: 10px 15px 10px 15px;
+	padding: 20px 15px 10px 15px;
 	border: 0;
 	background: none;
-	margin-top: 10px;
+	resize: none;
 }
 
 .sin-respuesta{

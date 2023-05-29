@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="encriptador.css">
+
 	<title>Encriptador</title>
 </head>
 <body>
@@ -14,8 +15,8 @@
 		<textarea placeholder="Escribe el texto aquí" id="textarea"></textarea>
 		<span><img src="images/exclamacion.png" alt="exlamacion"><label for="textarea">Solo letras minúsculas y sin acentos</label></span>
 		<div class="buttons">
-			<button>Encriptar</button>
-			<button>Descencriptar</button>
+			<button id="btnEncriptar">Encriptar</button>
+			<button id="btnDescencriptar">Descencriptar</button>
 		</div>
 		<div class="cajaRespuesta">
 			
@@ -28,8 +29,9 @@
 			</div>
 		</div>
 		<div class="btnCopiar">
-				<button>Copiar</button>
+				<button id="Copiar">Copiar</button>
 		</div> 
 	</div>
 </body>
+<script src="encriptador.js"></script>
 </html>
