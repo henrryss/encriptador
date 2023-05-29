@@ -1,0 +1,207 @@
+body{
+	background: #F3F5FC;
+}
+
+.contenedor{
+	position: relative;
+	width: 1440px;
+	height: 1024px;
+	margin: 0 auto;
+}
+
+.logo{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 40px;
+	position: absolute;
+	width: 120px;
+	height: 48px;
+	left: 40px;
+	top: 40px;
+}
+
+#textarea{
+	position: absolute;
+	width: 675px;
+	height: 670px;
+	left: 240px;
+	top: 168px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+	color: #0A3871;
+	background: none;
+	border: none;
+	resize: none;
+}
+
+textarea::placeholder{
+	color: #0A3871;
+}
+
+textarea:focus{
+	border: 1px solid #0A3871;
+	outline: none;
+}
+
+span{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
+	position: absolute;
+	width: 229px;
+	height: 18px;
+	left: 240px;
+	top: 851px;
+}
+
+span img{
+	width: 16px;
+	height: 16px;
+}
+
+span label{
+	width: 205px;
+	height: 18px;
+	font-family:'Inter' ;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	color: #495057;
+	opacity: 0.8;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.buttons{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	position: absolute;
+	width: 680px;
+	height: 67px;
+	left: 240px;
+	top: 885px;
+}
+
+.buttons button:first-child{
+	width: 328px;
+	height: 67px;
+	background: #0A3871;
+	border-radius: 24px;
+	text-align: center;
+	font-family:'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: white;
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	cursor: pointer;
+}
+
+.buttons button:last-child{
+	width: 328px;
+	height: 67px;
+	background: #D8DFE8;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	text-align: center;
+	font-family:'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #0A3871;
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	cursor: pointer;
+}
+
+.btnCopiar {
+	position: absolute;
+	top: 885px;
+	left: 1036px;
+	display: none;
+}
+
+.btnCopiar button{
+	width: 328px;
+	height: 67px;
+	background: white;
+	border-radius: 24px;
+	border: 1px solid #0A3871;
+	color: #0A3871;
+	font-family:'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	cursor: pointer;
+}
+
+.cajaRespuesta{
+	position: relative;
+	width: 400px;
+	height: 944px;
+	left: 1000px;
+	top: 40px;
+	background: white;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	text-align: center;
+
+}
+
+.sin-respuesta{
+	width: 340px;
+	height: 400px;
+	position: absolute;
+	top: 272px;
+	left: 30px;
+	margin: -20px 0 -20px 0;
+	
+}
+
+.sin-respuesta img{
+	width: 336px;
+	height: 304px;
+}
+.sin-respuesta p{
+	margin-bottom: 15px;
+}
+
+.mensaje1{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 120%;
+	/* or 29px */
+	/* Gray/gray-500 */
+	color: #343A40;
+}
+
+.mensaje2{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	/* or 24px */
+	/* Gray/gray-400 */
+	color: #495057;
+}
