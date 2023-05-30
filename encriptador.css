@@ -5,7 +5,7 @@ body{
 .contenedor{
 	position: relative;
 	width: 1440px;
-	height: 1024px;
+	height: auto;
 	margin: 0 auto;
 }
 
@@ -131,28 +131,6 @@ span label{
 	cursor: pointer;
 }
 
-.btnCopiar {
-	position: absolute;
-	top: 885px;
-	left: 1036px;
-	display: none;
-}
-
-.btnCopiar button{
-	width: 328px;
-	height: 67px;
-	background: white;
-	border-radius: 24px;
-	border: 1px solid #0A3871;
-	color: #0A3871;
-	font-family:'Inter';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	cursor: pointer;
-}
-
 .cajaRespuesta{
 	position: relative;
 	width: 400px;
@@ -220,83 +198,231 @@ span label{
 	color: #495057;
 }
 
-@media screen and (min-width:376px) and (max-width:768px){
+.btnCopiar {
+	position: absolute;
+	top: 845px;
+	left: 40px;
+	display: none;
+}
+
+.btnCopiar button{
+	width: 328px;
+	height: 67px;
+	background: white;
+	border-radius: 24px;
+	border: 1px solid #0A3871;
+	color: #0A3871;
+	font-family:'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+
+.contenedor{
+	max-width: 768px;
+	height: auto;
+}
 
 .logo{
 	position: absolute;
 	width: 31.09px;
 	height: 50.58px;
-	left: 40px;
-	top: 73.42px;
+	left: 20px;
+	top: 40px;
 }
 
 #textarea{
 	position: absolute;
-	width: 688px;
-	height: 288px;
-	left: 40px;
-	top: 240px;
+	width: 700px;
+	height: 480px;
+	left: 20px;
+	top: 150px;
+	box-sizing: border-box;
 }
 
 span{
 	position: absolute;
 	width: 229px;
 	height: 18px;
-	left: 40px;
-	top: 836px;
+	left: 20px;
+	top: 640px;
 }
 .buttons{
-	
 	position: absolute;
-	width: 688px;
+	width: 700px;
 	height: 67px;
+	left: 20px;
+	top: 670px;
+	box-sizing: border-box;
+}
+.buttons button:first-child{
+	width: 300px;
+	height: 67px;
+}
+
+.buttons button:last-child{
+	width: 300px;
+	height: 67px;
+}
+
+.cajaRespuesta{
+	position: relative;
+	width: 700px;
+	height: 400px;
+	left: 20px;
+	top: 770px;
+	background: white;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	text-align: center;
+	box-sizing: content-box;
+}
+
+#txtDescencriptado{
+	display: block;
+	width: 666px;
+	height: 250px;
+	padding: 20px 15px 10px 15px;
+	background: none;
+	resize: none;
+	pointer-events: none; /* Deshabilitamos los eventos de mouse y teclado sobre el textarea */
+}
+
+.sin-respuesta{
+	width: 550px;
+	height: 200px;
+	position: absolute;
+	top: 40px;
+	left: 10%;
+	
+}
+
+.sin-respuesta img{
+	display: none;
+}
+.sin-respuesta p{
+	margin-bottom: 15px;
+}
+.btnCopiar {
+	position: absolute;
+	top: 315px;
 	left: 40px;
-	top: 870px;
+	display: none;
+}
+.btnCopiar button{
+	width: 620px;
+	height: 67px;
 }
 
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:395px){
+
+.contenedor{
+	max-width: 395px;
+	height: auto;
+}
 
 .logo{
 	position: absolute;
-	width: 375px;
-	height: 96px;
-	left: 0px;
-	top: 0px;
+	width: 31.09px;
+	height: 50.58px;
+	left: 20px;
+	top: 40px;
 }
 
 #textarea{
 	position: absolute;
-	width: 343px;
-	height: 624px;
-	left: 16px;
-	top: 152px;
+	width: 350px;
+	height: 380px;
+	left: 20px;
+	top: 150px;
+	
+	box-sizing: border-box;
 }
 
 span{
 	position: absolute;
 	width: 229px;
 	height: 18px;
-	left: 16px;
-	top: 451px;
+	left: 20px;
+	top: 540px;
 }
-
 .buttons{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 0px;
-	gap: 24px;
+	gap: 10px;
 	position: absolute;
-	width: 343px;
-	height: 158px;
-	left: 16px;
-	top: 485px;
+	width: 350px;
+	height: 67px;
+	left: 20px;
+	top: 570px;
+	box-sizing: border-box;
+
+}
+.buttons button:first-child{
+	width: 350px;
+	height: 67px;
 }
 
-.buttons button{
-	align-self: stretch;
+.buttons button:last-child{
+	width: 350px;
+	height: 67px;
 }
 
+.cajaRespuesta{
+	position: relative;
+	width: 350px;
+	height: 400px;
+	
+	left: 20px;
+	top: 750px;
+	background: white;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	text-align: center;
+	box-sizing: content-box;
+}
+
+#txtDescencriptado{
+	display: none;
+	width: 320px;
+	height: 250px;
+	padding: 20px 15px 10px 15px;
+	background: none;
+	resize: none;
+	pointer-events: none; /* Deshabilitamos los eventos de mouse y teclado sobre el textarea */
+}
+
+.sin-respuesta{
+	width: 350px;
+	height: 200px;
+	position: absolute;
+	top: 40px;
+	left: 1%;
+	
+}
+
+.sin-respuesta img{
+	display: none;
+}
+.sin-respuesta p{
+	margin-bottom: 15px;
+}
+.btnCopiar {
+	position: absolute;
+	top: 310px;
+	left: 20px;
+	display: none;
+}
+.btnCopiar button{
+	width: 310px;
+	height: 67px;
+}
 }
