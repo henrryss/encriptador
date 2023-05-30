@@ -237,7 +237,7 @@ span label{
 
 #textarea{
 	position: absolute;
-	width: 700px;
+	width: 725px;
 	height: 480px;
 	left: 20px;
 	top: 150px;
@@ -253,7 +253,7 @@ span{
 }
 .buttons{
 	position: absolute;
-	width: 700px;
+	width: 725px;
 	height: 67px;
 	left: 20px;
 	top: 670px;
@@ -272,7 +272,9 @@ span{
 .cajaRespuesta{
 	position: relative;
 	width: 700px;
-	height: 400px;
+	min-height: 100px;
+	height: auto;
+	max-height: 550px;
 	left: 20px;
 	top: 770px;
 	background: white;
@@ -283,20 +285,21 @@ span{
 }
 
 #txtDescencriptado{
-	display: block;
+	display: none;
 	width: 666px;
-	height: 250px;
+	height: auto;
+	max-height: 450px;
 	padding: 20px 15px 10px 15px;
 	background: none;
 	resize: none;
 }
 
 .sin-respuesta{
-	width: 550px;
-	height: 200px;
+	width: 100%;
+	height: auto;
 	position: absolute;
-	top: 40px;
-	left: 10%;
+	top: 40%;
+	left: 1%;
 	
 }
 
@@ -307,10 +310,9 @@ span{
 	margin-bottom: 15px;
 }
 .btnCopiar {
-	position: absolute;
-	top: 315px;
-	left: 40px;
+	position: initial;
 	display: none;
+	margin-top: 15px;
 }
 .btnCopiar button{
 	width: 620px;
@@ -402,7 +404,6 @@ span{
 	padding: 20px 15px 10px 15px;
 	background: none;
 	resize: none;
-
 }
 
 .sin-respuesta{
