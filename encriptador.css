@@ -25,7 +25,7 @@ body{
 #textarea{
 	position: absolute;
 	width: 675px;
-	height: 670px;
+	height: 610px;
 	left: 240px;
 	top: 168px;
 	font-family: 'Inter';
@@ -58,7 +58,7 @@ span{
 	width: 229px;
 	height: 18px;
 	left: 240px;
-	top: 851px;
+	top: 800px;
 }
 
 span img{
@@ -91,7 +91,7 @@ span label{
 	width: 680px;
 	height: 67px;
 	left: 240px;
-	top: 885px;
+	top: 835px;
 }
 
 .buttons button:first-child{
@@ -134,29 +134,29 @@ span label{
 .cajaRespuesta{
 	position: relative;
 	width: 400px;
-	height: 944px;
+	height: 850px;
 	left: 1000px;
 	top: 40px;
 	background: white;
 	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 	border-radius: 32px;
 	text-align: center;
+	padding: 20px 10px 10px 15px;
 }
 
 #txtDescencriptado{
 	display: none;
-	height: 750px;
+	width: 400px;
+	height: 730px;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 150%;
 	color: #0A3871;
-	padding: 20px 15px 10px 15px;
-	border: 0;
+	border: none;
 	background: none;
 	resize: none;
-	pointer-events: none; /* Deshabilitamos los eventos de mouse y teclado sobre el textarea */
 }
 
 .sin-respuesta{
@@ -200,8 +200,8 @@ span label{
 
 .btnCopiar {
 	position: absolute;
-	top: 845px;
-	left: 40px;
+	top: 795px;
+	left: 50px;
 	display: none;
 }
 
@@ -289,7 +289,6 @@ span{
 	padding: 20px 15px 10px 15px;
 	background: none;
 	resize: none;
-	pointer-events: none; /* Deshabilitamos los eventos de mouse y teclado sobre el textarea */
 }
 
 .sin-respuesta{
@@ -341,7 +340,6 @@ span{
 	height: 380px;
 	left: 20px;
 	top: 150px;
-	
 	box-sizing: border-box;
 }
 
@@ -397,7 +395,6 @@ span{
 	padding: 20px 15px 10px 15px;
 	background: none;
 	resize: none;
-	pointer-events: none; /* Deshabilitamos los eventos de mouse y teclado sobre el textarea */
 }
 
 .sin-respuesta{
