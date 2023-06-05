@@ -12,10 +12,12 @@ function encriptarTexto(){
 	document.querySelector(".sin-respuesta").style.display = "none";
 	//mostrar el textarea resultado y el boton copiar
 	document.querySelector("#txtDescencriptado").style.display = "block";
+	location.href ="#txtDescencriptado";
 	document.querySelector(".btnCopiar").style.display = "block";
 	//encriptar el texto
 	textoEncriptado =texto.replace(/e/g,"enter").replace(/i/g,"imes").replace(/a/g,"ai").replace(/o/g,"ober").replace(/u/g,"ufat");	 
 	document.querySelector("#txtDescencriptado").innerHTML= textoEncriptado;
+
 	}
 }
 
